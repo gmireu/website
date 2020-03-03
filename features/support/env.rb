@@ -16,5 +16,5 @@ end
 
 Capybara.configure do |config|
     config.default_driver = @driver
-    config.app_host = "http://www.juliodelima.com.br/taskit/"
+    config.app_host = "http://www.juliodelima.com.br/taskit"
 end
