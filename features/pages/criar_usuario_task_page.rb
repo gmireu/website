@@ -1,4 +1,6 @@
 class CriarUsuarioTask < SitePrism::Page
+    set_url 'http://www.juliodelima.com.br/taskit/'
+    
     element :btn_sign_up, '#signup'
     element :name, 'input[name=name]'
     element :login, 'input[name=login]'
@@ -65,3 +67,4 @@ end
 
 
 end
+
