@@ -21,12 +21,3 @@ end
 Então("eu devo visualizar um mensagem de erro") do
     page.assert_text(text,"Someone choose this login before, please pick another!")
 end
-
-#acesso negado
-Quando("eu inserir meu usuario e senha") do
-    @login_task.acesso_negado
-end
-  
-Então("eu devo visualizar na tela uma mensagem de erro") do
-    page.assert_text(text,"Maybe you brain dropped the password or login in some place!")
-end
