@@ -21,4 +21,5 @@ end
 Capybara.configure do |config|
     config.default_driver = @driver
     config.app_host = "http://www.juliodelima.com.br/taskit/"
+    config.default_max_wait_time = 30
 end
