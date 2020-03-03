@@ -1,6 +1,6 @@
 Dado("que eu acesse o site Julio de Lima") do
     @login_task = CriarUsuarioTask.new
-    @login_task.load
+    visit "/"
 end
   
 #criando login e task
