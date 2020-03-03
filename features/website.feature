@@ -19,8 +19,3 @@ Então eu devo visualizar a task criada
 Cenário: Login já existente
 Quando eu criar um usuario com um login já existente 
 Então eu devo visualizar um mensagem de erro
-
-@acesso_negado
-Cenário: Acesso negado
-Quando eu inserir meu usuario e senha 
-Então eu devo visualizar na tela uma mensagem de erro
