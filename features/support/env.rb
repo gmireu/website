@@ -5,7 +5,7 @@ require "selenium-webdriver"
 case ENV["BROWSER"]
 when "firefox"
     @driver = :selenium
-when "chorme"
+when "chrome"
     @driver = :selenium_chrome
 when"headless"
     @driver = :selenium_chrome_headless
