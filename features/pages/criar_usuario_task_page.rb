@@ -17,7 +17,7 @@ class CriarUsuarioTask < SitePrism::Page
     element :text, 'input[name=text]'
     element :btn_save_2, '.btn-flat'
 
-    element :link_sign, '.modal_trigger'
+    element :link_sign, :xpath, "//a[@class='modal-trigger']"
     element :login_2, 'input[name=login]'
     element :password_2, 'input[name=password]'
     element :btn_sign_in, '.btn-flat'
@@ -26,9 +26,9 @@ class CriarUsuarioTask < SitePrism::Page
 
 def criar_usuario
     self.btn_sign_up.click
-    self.name.set(Faker::Name)
-    self.login.set(Faker::Name)
-    self.password.set(Faker::Name)
+    self.name.set('mireu10')
+    self.login.set('mireu10')
+    self.password.set('mireu10')
     self.btn_save.click
 end
 
@@ -65,4 +65,3 @@ end
 
 
 end
-
