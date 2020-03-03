@@ -1,10 +1,10 @@
 Dado("que eu acesse o site Julio de Lima") do
-    visit "/"
+    @login_task = CriarUsuarioTask.new
+    @login_task.load
 end
   
 #criando login e task
 Quando("eu criar um login e uma senha e uma task") do
-    @login_task = CriarUsuarioTask.new
     @login_task.criar_usuario
     @login_task.criar_task
 end
@@ -15,7 +15,6 @@ end
 
 #login_existente
 Quando("eu criar um usuario com um login já existente") do
-    @login_task = CriarUsuarioTask.new
     @login_task.login_existente
 end
   
@@ -25,7 +24,6 @@ end
 
 #acesso negado
 Quando("eu inserir meu usuario e senha") do
-    @login_task = CriarUsuarioTask.new
     @login_task.acesso_negado
 end
   
