@@ -16,7 +16,7 @@ end
 #login_existente
 Quando("eu criar um usuario com um login já existente") do
     @login_task = CriarUsuarioTask.new
-    @login_task.login_existenteions
+    @login_task.login_existente
 end
   
 Então("eu devo visualizar um mensagem de erro") do
