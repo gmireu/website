@@ -29,7 +29,7 @@ end
 def criar_task
     self.btn_add_task.click
     self.btn_add_task_2.click
-    self.title_task.set('Escrevendo a pergunta')
+    self.title_task.set('Título da pergunta')
     self.date.click
     self.today.click
     self.date_ok.click
@@ -37,7 +37,7 @@ def criar_task
     self.hour.click
     self.minutes.click
     self.time_ok.click
-    self.text.set('Gabriel1')
+    self.text.set('Escrevendo a pergunta')
     self.btn_save_2.click
 end
 
