@@ -13,7 +13,6 @@ task
 Foram utilizadas tags para a execucao de cenarios especificos:
 |```@@criar_usuario_task```| Executa todos os cenarios                                   |
 |```@login_existente```    | Executa o cenario com uma massa de login já existente       |
-|```@acesso_negado```      | Executa o cenario com uma massa com login e senha incorretos|
 
 
 ### Browsers disponiveis
