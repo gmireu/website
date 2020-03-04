@@ -20,9 +20,9 @@ class CriarUsuarioTask < SitePrism::Page
 
 def criar_usuario
     self.btn_sign_up.click
-    self.name.set(Faker::Movies::StarWars.character)
-    self.login.set(Faker::Movies::StarWars.character)
-    self.password.set(Faker::Movies::StarWars.character)
+    self.name.set(Faker::Name.name)
+    self.login.set(Faker::Name.name)
+    self.password.set(Faker::Name.name)
     self.btn_save.click
 end
 
