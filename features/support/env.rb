@@ -5,6 +5,7 @@ require "capybara/dsl"
 require "capybara/cucumber"
 require "selenium-webdriver"
 require "httparty"
+require "faker"
 
 case ENV["BROWSER"]
 when "firefox"
