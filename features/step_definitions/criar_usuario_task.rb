@@ -10,7 +10,7 @@ Quando("eu criar um login e uma senha e uma task") do
 end
   
 Então("eu devo visualizar a task criada") do
-    page.assert_text(text,"The taskhas been added, pretty simple!")
+    page.assert_text(text,"The task has been added, pretty simple!")
 end
 
 #login_existente
