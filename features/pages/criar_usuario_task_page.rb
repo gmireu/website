@@ -14,7 +14,7 @@ class CriarUsuarioTask < SitePrism::Page
     element :hour, :xpath, "//div[@class='clockpicker-tick'][contains(text(),'14')]"
     element :minutes, :xpath, "//div[@class='clockpicker-tick'][contains(text(),'10')]"
     element :time_ok, :xpath, "//button[contains(text(),'OK')]"
-    element :text, 'input[name=text]'
+    element :text, :xpath, "//textarea[@name='text']"
     element :btn_save_2, '.btn-flat'
 
 
@@ -29,7 +29,7 @@ end
 def criar_task
     self.btn_add_task.click
     self.btn_add_task_2.click
-    self.title_task.set('Gabriel1')
+    self.title_task.set('Escrevendo a pergunta')
     self.date.click
     self.today.click
     self.date_ok.click
@@ -47,7 +47,7 @@ def login_existente
     self.login.set('Gabriel')
     self.password.set('Gabriel')
     self.btn_save.click
+    
 end
 
 end
-
