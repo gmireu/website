@@ -11,8 +11,8 @@ class CriarUsuarioTask < SitePrism::Page
     element :today, :xpath, "//button[@class='btn-flat picker__today waves-effect']"
     element :date_ok, :xpath, "//button[contains(text(),'Ok')]"
     element :time, 'input[name=time]'
-    element :hour, :xpath, "//div[@style='left: 205.933px; top: 62.5px;'][contains(text(),'14')]"
-    element :minutes, :xpath, "//div[@style='left: 205.933px; top: 62.5px;'][contains(text(),'10')]"
+    element :hour, :xpath, "//div[@class='clockpicker-tick'][contains(text(),'14')]"
+    element :minutes, :xpath, "//div[@class='clockpicker-tick'][contains(text(),'10')]"
     element :time_ok, "//button[contains(text(),'OK')]"
     element :text, 'input[name=text]'
     element :btn_save_2, '.btn-flat'
@@ -33,7 +33,6 @@ def criar_task
     self.date.click
     self.today.click
     self.date_ok.click
-    self.time.click
     self.time.click
     self.hour.click
     self.minutes.click
