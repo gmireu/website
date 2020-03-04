@@ -13,7 +13,7 @@ class CriarUsuarioTask < SitePrism::Page
     element :time, 'input[name=time]'
     element :hour, :xpath, "//div[@class='clockpicker-tick'][contains(text(),'14')]"
     element :minutes, :xpath, "//div[@class='clockpicker-tick'][contains(text(),'10')]"
-    element :time_ok, "//button[contains(text(),'OK')]"
+    element :time_ok, :xpath, "//button[contains(text(),'OK')]"
     element :text, 'input[name=text]'
     element :btn_save_2, '.btn-flat'
 
